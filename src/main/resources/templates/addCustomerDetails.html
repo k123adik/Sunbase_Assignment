@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Details</title>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding-right: 10px;
+            box-sizing: border-box;
+        }
+        .form-group input {
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-group label:nth-child(2n+1) {
+            padding-left: 0;
+        }
+        .form-group input:nth-child(2n) {
+            padding-left: 0;
+        }
+        .form-group input[type="text"], .form-group input[type="email"], .form-group input[type="tel"] {
+            width: calc(100% - 20px);
+        }
+        .form-group label {
+            padding-bottom: 5px;
+            color: #555;
+        }
+        .submit-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .submit-button button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-button button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<h1>Customer Details</h1>
+<div class="form-container">
+  <form id="customerDetailsForm" action="create" method="post">
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="firstName" required>
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastName" required>
+    </div>
+    <div class="form-group">
+      <label for="street">Street</label>
+      <input type="text" id="street" name="street" required>
+    </div>
+    <div class="form-group">
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" required>
+    </div>
+    <div class="form-group">
+      <label for="city">City</label>
+      <input type="text" id="city" name="city" required>
+    </div>
+    <div class="form-group">
+      <label for="state">State</label>
+      <input type="text" id="state" name="state" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="mobile">Mobile</label>
+      <input type="tel" id="mobile" name="mobile" required>
+    </div>
+    <div class="submit-button">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
